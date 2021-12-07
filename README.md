@@ -3,10 +3,10 @@
 
 ## 目录结构
 .
-├── LICENSE 								# 开源协议
+├── LICENSE 							# 开源协议
 ├── README.md							# 说明文件
-└── src										  # 源代码
-    └── coding-interviews	 # 剑指offer 相关练习 
+└── coding-interviews	                # 剑指offer 相关练习 
+└── leetcode                            # leetcode 相关练习
       
 
 
