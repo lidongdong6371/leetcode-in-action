@@ -5,7 +5,7 @@ const INT_MIN = ^int(^uint64((0)) >> 1)
 // https://leetcode-cn.com/problems/maximum-subarray/
 func maxSubArray(nums []int) int {
 
-	return getMax(0, len(nums)-1).mSum
+	return getMax(0, len(nums)-1, nums).mSum
 }
 
 func getMax(l, r int, nums []int) Status {

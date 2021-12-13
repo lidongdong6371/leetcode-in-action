@@ -8,6 +8,17 @@ import (
 
 var esp float64 = 0.0000001
 
+func Test70(t *testing.T) {
+	n := 10
+	respect := 89
+	result := climbStairs(n)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
 func Test963(t *testing.T) {
 	points := [][]int{{0, 1}, {2, 1}, {1, 1}, {1, 0}, {2, 0}}
 	// minAreaFreeRect(points)
@@ -42,9 +53,4 @@ func Test53(t *testing.T) {
 	} else {
 		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
 	}
-}
-
-func TestDemo(t *testing.T) {
-	fmt.Println("aaa", (7 >> 1))
-	t.Log()
 }
