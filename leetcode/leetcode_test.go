@@ -8,6 +8,42 @@ import (
 
 var esp float64 = 0.0000001
 
+func Test121(t *testing.T) {
+	// nums1 := []int{7, 1, 5, 3, 6, 4}
+	nums2 := []int{7, 6, 4, 3, 1}
+	respect := 0
+	result := maxProfit(nums2)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
+func Test350(t *testing.T) {
+	nums1 := []int{4, 9, 5}
+	nums2 := []int{9, 4, 9, 8, 4}
+	respect := []int{4, 9}
+	result := intersect(nums1, nums2)
+	if equalInt(result, respect) {
+		t.Logf("Success: result is: %v", result)
+	} else {
+		t.Errorf(" Failed:respect %v， but result is: %v", respect, result)
+	}
+}
+
+func Test01(t *testing.T) {
+	nums := []int{3, 3}
+	target := 6
+	respect := []int{1, 2}
+	result := twoSum(nums, target)
+	if equalInt(result, respect) {
+		t.Logf("Success: result is: %v", result)
+	} else {
+		t.Errorf(" Failed:respect %v， but result is: %v", respect, result)
+	}
+}
+
 func Test70(t *testing.T) {
 	n := 10
 	respect := 89
