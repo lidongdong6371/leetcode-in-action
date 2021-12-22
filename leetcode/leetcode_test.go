@@ -8,6 +8,39 @@ import (
 
 var esp float64 = 0.0000001
 
+func Test746(t *testing.T) {
+	cost := []int{10, 15, 20}
+	respect := 15
+	result := minCostClimbingStairs(cost)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
+func Test1137(t *testing.T) {
+	n := 4
+	respect := 4
+	result := tribonacci(n)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
+func Test509(t *testing.T) {
+	n := 30
+	respect := 2
+	result := fib(n)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
 func Test121(t *testing.T) {
 	// nums1 := []int{7, 1, 5, 3, 6, 4}
 	nums2 := []int{7, 6, 4, 3, 1}
