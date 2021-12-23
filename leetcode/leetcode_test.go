@@ -8,6 +8,21 @@ import (
 
 var esp float64 = 0.0000001
 
+func Test213(t *testing.T) {
+
+}
+
+func Test198(t *testing.T) {
+	nums := []int{2, 1, 1, 2}
+	respect := 4
+	result := rob(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
 func Test746(t *testing.T) {
 	cost := []int{10, 15, 20}
 	respect := 15
