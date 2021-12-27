@@ -8,8 +8,51 @@ import (
 
 var esp float64 = 0.0000001
 
-func Test213(t *testing.T) {
+func Test152(t *testing.T) {
+	// [-2,3,-4] 24
+	// [-2,0,-1] 0
+	// [2,-5,-2,-4,3] 24
+	nums := []int{2, -5, -2, -4, 3}
+	respect := 24
+	result := maxProduct(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf("Failed:respect %d， but result is: %d", respect, result)
+	}
+}
 
+func Test55(t *testing.T) {
+	nums := []int{3, 2, 1, 0, 4}
+	respect := false
+	result := canJump(nums)
+	if result == respect {
+		t.Logf("Success: result is: %t", result)
+	} else {
+		t.Errorf(" Failed:respect %t， but result is: %t", respect, result)
+	}
+}
+
+func Test740(t *testing.T) {
+	nums := []int{2, 2, 3, 3, 3, 4}
+	respect := 9
+	result := deleteAndEarn(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
+func Test213(t *testing.T) {
+	nums := []int{1, 2, 3, 1}
+	respect := 4
+	result := rob2(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf(" Failed:respect %d， but result is: %d", respect, result)
+	}
 }
 
 func Test198(t *testing.T) {
