@@ -8,6 +8,21 @@ import (
 
 var esp float64 = 0.0000001
 
+func Test1567(t *testing.T) {
+	// [-1,-2,-3,0,1] 2
+	// [1,-2,-3,4] 4
+	// [0,1,-2,-3,-4] 3
+	// [5,-20,-20,-39,-5,0,0,0,36,-32,0,-7,-10,-7,21,20,-12,-34,26,2] 8
+	nums := []int{5, -20, -20, -39, -5, 0, 0, 0, 36, -32, 0, -7, -10, -7, 21, 20, -12, -34, 26, 2}
+	respect := 8
+	result := getMaxLen(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf("Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+
 func Test152(t *testing.T) {
 	// [-2,3,-4] 24
 	// [-2,0,-1] 0
