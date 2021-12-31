@@ -8,6 +8,31 @@ import (
 
 var esp float64 = 0.0000001
 
+func Test122(t *testing.T) {
+	// [7,1,5,3,6,4] 7
+	// [1,2,3,4,5] 4
+	// [7,6,4,3,1] 0
+	nums := []int{1, 2, 3, 4, 5}
+	respect := 4
+	result := maxProfit2(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf("Failed:respect %d， but result is: %d", respect, result)
+	}
+}
+func Test1014(t *testing.T) {
+	// [8,1,5,2,6] 11
+	// [1,2] 2
+	nums := []int{8, 1, 5, 2, 6}
+	respect := 11
+	result := maxScoreSightseeingPair(nums)
+	if result == respect {
+		t.Logf("Success: result is: %d", result)
+	} else {
+		t.Errorf("Failed:respect %d， but result is: %d", respect, result)
+	}
+}
 func Test1567(t *testing.T) {
 	// [-1,-2,-3,0,1] 2
 	// [1,-2,-3,4] 4
